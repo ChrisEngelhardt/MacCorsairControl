@@ -1,3 +1,6 @@
+
+![alt text](CorsairControl/CorsairControl/Assets.xcassets/AppIcon.appiconset/icon_256x256.png)
+
 # MacCorsairControl
 
 Small toolbar widget to control the Corsair H100i with your Mac (maybe works for more models).
