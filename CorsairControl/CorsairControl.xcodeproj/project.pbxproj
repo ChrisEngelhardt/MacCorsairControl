@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83117BA62368E131002C2DE3 /* Combineable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83117BA52368E131002C2DE3 /* Combineable.swift */; };
+		832D2A5023635D44008CA8D4 /* CCorsairTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D2A4F23635D44008CA8D4 /* CCorsairTypes.swift */; };
+		832D2A5223635D8A008CA8D4 /* CCorsairExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D2A5123635D8A008CA8D4 /* CCorsairExtensions.swift */; };
+		8343AB7D236B5DFA00D54806 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343AB7C236B5DFA00D54806 /* EventMonitor.swift */; };
+		836FF02E236CBB87009ED099 /* Persist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FF02D236CBB87009ED099 /* Persist.swift */; };
+		836FF030236CCE4A009ED099 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FF02F236CCE4A009ED099 /* Preference.swift */; };
+		837B0C38236E3F50005EDC6E /* AcknowledgeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0C37236E3F50005EDC6E /* AcknowledgeNotification.swift */; };
+		837B0C3A236E3F65005EDC6E /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0C39236E3F65005EDC6E /* BottomBar.swift */; };
+		837B0C3C236E3F81005EDC6E /* AutostartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0C3B236E3F81005EDC6E /* AutostartHelper.swift */; };
+		83807B5B236245F3004DC004 /* Corsair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83807B5A236245F3004DC004 /* Corsair.swift */; };
+		83A9BE1B23704D5A00288462 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A9BE1A23704D5A00288462 /* Sparkle.framework */; };
+		83A9BE1E23704DCB00288462 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83A9BE1A23704D5A00288462 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83AFCE362365A0B600057E35 /* ColorBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFCE332365A0B600057E35 /* ColorBackground.swift */; };
+		83AFCE372365A0B600057E35 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFCE342365A0B600057E35 /* ColorExtension.swift */; };
+		83AFCE382365A0B600057E35 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFCE352365A0B600057E35 /* ColorPicker.swift */; };
+		83AFCE3C2365BDC400057E35 /* LEDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFCE3B2365BDC400057E35 /* LEDView.swift */; };
+		83AFCE3E2365BDDB00057E35 /* FanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFCE3D2365BDDB00057E35 /* FanView.swift */; };
+		83AFCE402365BDF200057E35 /* PumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFCE3F2365BDF200057E35 /* PumpView.swift */; };
+		83CCC32E2369DEB90012872D /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCC32D2369DEB90012872D /* LaunchAtLogin.framework */; };
+		83CCC32F2369DEB90012872D /* LaunchAtLogin.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83CCC32D2369DEB90012872D /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83CF787D2369D67500D71460 /* libCorsairApi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CF7E402360CD790037C1FB /* libCorsairApi.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		83CF787E2369D67500D71460 /* libCorsairApi.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83CF7E402360CD790037C1FB /* libCorsairApi.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		83CF7E162360CD270037C1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7E152360CD270037C1FB /* AppDelegate.swift */; };
+		83CF7E182360CD270037C1FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7E172360CD270037C1FB /* ContentView.swift */; };
+		83CF7E1A2360CD270037C1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CF7E192360CD270037C1FB /* Assets.xcassets */; };
+		83CF7E1D2360CD270037C1FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CF7E1C2360CD270037C1FB /* Preview Assets.xcassets */; };
+		83CF7E202360CD270037C1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CF7E1E2360CD270037C1FB /* Main.storyboard */; };
+		83CF7E702360DFF30037C1FB /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CF7E2F2360CD4E0037C1FB /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		83CF7E712360DFF30037C1FB /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83CF7E2F2360CD4E0037C1FB /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		83CFC3E82369AAA30013F51B /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CFC3E72369AAA30013F51B /* Timeout.swift */; };
+		83E30C7B2365C2650096BE30 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E30C7A2365C2650096BE30 /* InfoView.swift */; };
+		83E30C7D2365C5710096BE30 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E30C7C2365C5710096BE30 /* ListView.swift */; };
+		83F2CD93237EB28C00B38C43 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2CD92237EB28B00B38C43 /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83A9BE1D23704DB500288462 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83A9BE1E23704DCB00288462 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF7E322360CD4E0037C1FB /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83CF7E712360DFF30037C1FB /* libusb-1.0.0.dylib in Embed Libraries */,
+				83CF787E2369D67500D71460 /* libCorsairApi.dylib in Embed Libraries */,
+				83CCC32F2369DEB90012872D /* LaunchAtLogin.framework in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		83117BA52368E131002C2DE3 /* Combineable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combineable.swift; sourceTree = "<group>"; };
+		832D2A4F23635D44008CA8D4 /* CCorsairTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCorsairTypes.swift; sourceTree = "<group>"; };
+		832D2A5123635D8A008CA8D4 /* CCorsairExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCorsairExtensions.swift; sourceTree = "<group>"; };
+		8343AB7C236B5DFA00D54806 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		836FF02D236CBB87009ED099 /* Persist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persist.swift; sourceTree = "<group>"; };
+		836FF02F236CCE4A009ED099 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		837B0C37236E3F50005EDC6E /* AcknowledgeNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgeNotification.swift; sourceTree = "<group>"; };
+		837B0C39236E3F65005EDC6E /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		837B0C3B236E3F81005EDC6E /* AutostartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutostartHelper.swift; sourceTree = "<group>"; };
+		83807B5A236245F3004DC004 /* Corsair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corsair.swift; sourceTree = "<group>"; };
+		83A9BE1A23704D5A00288462 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		83AFCE332365A0B600057E35 /* ColorBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBackground.swift; sourceTree = "<group>"; };
+		83AFCE342365A0B600057E35 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		83AFCE352365A0B600057E35 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		83AFCE3B2365BDC400057E35 /* LEDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDView.swift; sourceTree = "<group>"; };
+		83AFCE3D2365BDDB00057E35 /* FanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanView.swift; sourceTree = "<group>"; };
+		83AFCE3F2365BDF200057E35 /* PumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpView.swift; sourceTree = "<group>"; };
+		83B3C8A72382FAE0009952A2 /* CorsairControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CorsairControl.entitlements; sourceTree = "<group>"; };
+		83CCC3222369DCE40012872D /* LaunchAtLogin.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = LaunchAtLogin.framework.dSYM; path = ../Carthage/Build/Mac/LaunchAtLogin.framework.dSYM; sourceTree = "<group>"; };
+		83CCC3242369DCF80012872D /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = ../Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
+		83CCC32D2369DEB90012872D /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
+		83CF787F2369D8B800D71460 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LaunchAtLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7E122360CD270037C1FB /* Corsair Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corsair Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7E152360CD270037C1FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83CF7E172360CD270037C1FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		83CF7E192360CD270037C1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83CF7E1C2360CD270037C1FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83CF7E1F2360CD270037C1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83CF7E212360CD270037C1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CF7E2F2360CD4E0037C1FB /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7E402360CD790037C1FB /* libCorsairApi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libCorsairApi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7E6F2360D00C0037C1FB /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		83CFC3E72369AAA30013F51B /* Timeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeout.swift; sourceTree = "<group>"; };
+		83E30C7A2365C2650096BE30 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		83E30C7C2365C5710096BE30 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		83F2CD91237EB28B00B38C43 /* PFMoveApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		83F2CD92237EB28B00B38C43 /* PFMoveApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83CF7E0F2360CD270037C1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF787D2369D67500D71460 /* libCorsairApi.dylib in Frameworks */,
+				83CF7E702360DFF30037C1FB /* libusb-1.0.0.dylib in Frameworks */,
+				83CCC32E2369DEB90012872D /* LaunchAtLogin.framework in Frameworks */,
+				83A9BE1B23704D5A00288462 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8343AB7B236B569D00D54806 /* Corsair */ = {
+			isa = PBXGroup;
+			children = (
+				83807B5A236245F3004DC004 /* Corsair.swift */,
+				832D2A4F23635D44008CA8D4 /* CCorsairTypes.swift */,
+				832D2A5123635D8A008CA8D4 /* CCorsairExtensions.swift */,
+			);
+			path = Corsair;
+			sourceTree = "<group>";
+		};
+		83AFCE392365A58400057E35 /* Colorwheel */ = {
+			isa = PBXGroup;
+			children = (
+				83AFCE332365A0B600057E35 /* ColorBackground.swift */,
+				83AFCE342365A0B600057E35 /* ColorExtension.swift */,
+				83AFCE352365A0B600057E35 /* ColorPicker.swift */,
+			);
+			path = Colorwheel;
+			sourceTree = "<group>";
+		};
+		83AFCE3A2365A59000057E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7E172360CD270037C1FB /* ContentView.swift */,
+				83E30C7A2365C2650096BE30 /* InfoView.swift */,
+				83AFCE3D2365BDDB00057E35 /* FanView.swift */,
+				83AFCE3F2365BDF200057E35 /* PumpView.swift */,
+				83AFCE3B2365BDC400057E35 /* LEDView.swift */,
+				83E30C7C2365C5710096BE30 /* ListView.swift */,
+				837B0C37236E3F50005EDC6E /* AcknowledgeNotification.swift */,
+				837B0C39236E3F65005EDC6E /* BottomBar.swift */,
+				83CFC3E72369AAA30013F51B /* Timeout.swift */,
+				837B0C3B236E3F81005EDC6E /* AutostartHelper.swift */,
+				83AFCE392365A58400057E35 /* Colorwheel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83CF7E092360CD270037C1FB = {
+			isa = PBXGroup;
+			children = (
+				83CCC3222369DCE40012872D /* LaunchAtLogin.framework.dSYM */,
+				83CF7E142360CD270037C1FB /* CorsairControl */,
+				83CF7E132360CD270037C1FB /* Products */,
+				83CF7E2E2360CD4E0037C1FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83CF7E132360CD270037C1FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7E122360CD270037C1FB /* Corsair Control.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CF7E142360CD270037C1FB /* CorsairControl */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7E152360CD270037C1FB /* AppDelegate.swift */,
+				8343AB7C236B5DFA00D54806 /* EventMonitor.swift */,
+				83117BA52368E131002C2DE3 /* Combineable.swift */,
+				836FF02D236CBB87009ED099 /* Persist.swift */,
+				836FF02F236CCE4A009ED099 /* Preference.swift */,
+				83AFCE3A2365A59000057E35 /* View */,
+				8343AB7B236B569D00D54806 /* Corsair */,
+				83CF7E6F2360D00C0037C1FB /* BridgingHeader.h */,
+				83F2CD91237EB28B00B38C43 /* PFMoveApplication.h */,
+				83F2CD92237EB28B00B38C43 /* PFMoveApplication.m */,
+				83CF7E192360CD270037C1FB /* Assets.xcassets */,
+				83CF7E1E2360CD270037C1FB /* Main.storyboard */,
+				83CF7E212360CD270037C1FB /* Info.plist */,
+				83B3C8A72382FAE0009952A2 /* CorsairControl.entitlements */,
+				83CF7E1B2360CD270037C1FB /* Preview Content */,
+			);
+			path = CorsairControl;
+			sourceTree = "<group>";
+		};
+		83CF7E1B2360CD270037C1FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7E1C2360CD270037C1FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		83CF7E2E2360CD4E0037C1FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A9BE1A23704D5A00288462 /* Sparkle.framework */,
+				83CF787F2369D8B800D71460 /* LaunchAtLogin.framework */,
+				83CCC3242369DCF80012872D /* LaunchAtLogin.framework */,
+				83CCC32D2369DEB90012872D /* LaunchAtLogin.framework */,
+				83CF7E402360CD790037C1FB /* libCorsairApi.dylib */,
+				83CF7E2F2360CD4E0037C1FB /* libusb-1.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83CF7E112360CD270037C1FB /* Corsair Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CF7E252360CD270037C1FB /* Build configuration list for PBXNativeTarget "Corsair Control" */;
+			buildPhases = (
+				83CF7E0E2360CD270037C1FB /* Sources */,
+				83CF7E0F2360CD270037C1FB /* Frameworks */,
+				83CF7E102360CD270037C1FB /* Resources */,
+				83CF7E322360CD4E0037C1FB /* Embed Libraries */,
+				83CCC3272369DCFD0012872D /* ShellScript */,
+				83A9BE1D23704DB500288462 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Corsair Control";
+			productName = CorsairUI;
+			productReference = 83CF7E122360CD270037C1FB /* Corsair Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CF7E0A2360CD270037C1FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Chris Engelhardt";
+				TargetAttributes = {
+					83CF7E112360CD270037C1FB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 83CF7E0D2360CD270037C1FB /* Build configuration list for PBXProject "CorsairControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CF7E092360CD270037C1FB;
+			productRefGroup = 83CF7E132360CD270037C1FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83CF7E112360CD270037C1FB /* Corsair Control */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83CF7E102360CD270037C1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7E202360CD270037C1FB /* Main.storyboard in Resources */,
+				83CF7E1D2360CD270037C1FB /* Preview Assets.xcassets in Resources */,
+				83CF7E1A2360CD270037C1FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83CCC3272369DCFD0012872D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/Carthage/Build/Mac/LaunchAtLogin.framework/Resources/copy-helper.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83CF7E0E2360CD270037C1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7E182360CD270037C1FB /* ContentView.swift in Sources */,
+				83E30C7D2365C5710096BE30 /* ListView.swift in Sources */,
+				837B0C38236E3F50005EDC6E /* AcknowledgeNotification.swift in Sources */,
+				83CFC3E82369AAA30013F51B /* Timeout.swift in Sources */,
+				83AFCE382365A0B600057E35 /* ColorPicker.swift in Sources */,
+				83AFCE3C2365BDC400057E35 /* LEDView.swift in Sources */,
+				83AFCE362365A0B600057E35 /* ColorBackground.swift in Sources */,
+				83E30C7B2365C2650096BE30 /* InfoView.swift in Sources */,
+				8343AB7D236B5DFA00D54806 /* EventMonitor.swift in Sources */,
+				83AFCE3E2365BDDB00057E35 /* FanView.swift in Sources */,
+				832D2A5223635D8A008CA8D4 /* CCorsairExtensions.swift in Sources */,
+				837B0C3C236E3F81005EDC6E /* AutostartHelper.swift in Sources */,
+				83AFCE402365BDF200057E35 /* PumpView.swift in Sources */,
+				832D2A5023635D44008CA8D4 /* CCorsairTypes.swift in Sources */,
+				836FF02E236CBB87009ED099 /* Persist.swift in Sources */,
+				83F2CD93237EB28C00B38C43 /* PFMoveApplication.m in Sources */,
+				83807B5B236245F3004DC004 /* Corsair.swift in Sources */,
+				83117BA62368E131002C2DE3 /* Combineable.swift in Sources */,
+				837B0C3A236E3F65005EDC6E /* BottomBar.swift in Sources */,
+				83AFCE372365A0B600057E35 /* ColorExtension.swift in Sources */,
+				836FF030236CCE4A009ED099 /* Preference.swift in Sources */,
+				83CF7E162360CD270037C1FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83CF7E1E2360CD270037C1FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CF7E1F2360CD270037C1FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83CF7E232360CD270037C1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83CF7E242360CD270037C1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		83CF7E262360CD270037C1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CorsairControl/CorsairControl.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_ASSET_PATHS = "\"CorsairControl/Preview Content\"";
+				DEVELOPMENT_TEAM = 6X7ND428MT;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/../CorsairApi,
+					"$SRCROOT/../Corsair/include/**",
+					"$PROJECT_DIR/../libusb-1.0.23/libusb/**",
+				);
+				INFOPLIST_FILE = CorsairControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peakerest.CorsairControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = $PROJECT_DIR/CorsairControl/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		83CF7E272360CD270037C1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CorsairControl/CorsairControl.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 24;
+				DEVELOPMENT_ASSET_PATHS = "\"CorsairControl/Preview Content\"";
+				DEVELOPMENT_TEAM = 6X7ND428MT;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/../CorsairApi,
+					"$SRCROOT/../Corsair/include/**",
+					"$PROJECT_DIR/../libusb-1.0.23/libusb/**",
+				);
+				INFOPLIST_FILE = CorsairControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peakerest.CorsairControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = $PROJECT_DIR/CorsairControl/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83CF7E0D2360CD270037C1FB /* Build configuration list for PBXProject "CorsairControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF7E232360CD270037C1FB /* Debug */,
+				83CF7E242360CD270037C1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CF7E252360CD270037C1FB /* Build configuration list for PBXNativeTarget "Corsair Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF7E262360CD270037C1FB /* Debug */,
+				83CF7E272360CD270037C1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CF7E0A2360CD270037C1FB /* Project object */;
+}

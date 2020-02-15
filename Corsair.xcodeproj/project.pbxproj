@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		832D2A4E23633BDF008CA8D4 /* Helper.h in Sources */ = {isa = PBXBuildFile; fileRef = 832D2A4D23633BDF008CA8D4 /* Helper.h */; };
+		83CF7D832360C49C0037C1FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D822360C49C0037C1FB /* main.c */; };
+		83CF7DCE2360C4FE0037C1FB /* device.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCC2360C4FE0037C1FB /* device.c */; };
+		83CF7DCF2360C4FE0037C1FB /* driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCD2360C4FE0037C1FB /* driver.c */; };
+		83CF7DD12360C5060037C1FB /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DD02360C5060037C1FB /* print.c */; };
+		83CF7DD42360C5D50037C1FB /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CF7DD32360C5D50037C1FB /* libusb-1.0.0.dylib */; };
+		83CF7DD52360C5D50037C1FB /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83CF7DD32360C5D50037C1FB /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		83CF7DD82360C7C00037C1FB /* scan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC82360C4F80037C1FB /* scan.c */; };
+		83CF7DD92360C7C00037C1FB /* options_pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC92360C4F80037C1FB /* options_pump.c */; };
+		83CF7DDA2360C7C00037C1FB /* options_fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCA2360C4F80037C1FB /* options_fan.c */; };
+		83CF7DDB2360C7C00037C1FB /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCB2360C4F80037C1FB /* options.c */; };
+		83CF7DDC2360C7C20037C1FB /* options_led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC12360C4F80037C1FB /* options_led.c */; };
+		83CF7DE12360C7C80037C1FB /* hydro_asetekpro.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC32360C4F80037C1FB /* hydro_asetekpro.c */; };
+		83CF7DE22360C7C80037C1FB /* commanderpro.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC42360C4F80037C1FB /* commanderpro.c */; };
+		83CF7DE32360C7C80037C1FB /* hydro_asetek.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC52360C4F80037C1FB /* hydro_asetek.c */; };
+		83CF7DE42360C7C80037C1FB /* psu.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC62360C4F80037C1FB /* psu.c */; };
+		83CF7DE52360C7C80037C1FB /* hydro_coolit.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC72360C4F80037C1FB /* hydro_coolit.c */; };
+		83CF7DE62360C7CC0037C1FB /* rmi.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D9D2360C4F80037C1FB /* rmi.c */; };
+		83CF7DE72360C7CC0037C1FB /* commanderpro.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D9E2360C4F80037C1FB /* commanderpro.c */; };
+		83CF7DE82360C7CC0037C1FB /* coolit.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D9F2360C4F80037C1FB /* coolit.c */; };
+		83CF7DE92360C7CC0037C1FB /* asetek.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA02360C4F80037C1FB /* asetek.c */; };
+		83CF7DEA2360C7D50037C1FB /* led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA32360C4F80037C1FB /* led.c */; };
+		83CF7DEB2360C7D50037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA42360C4F80037C1FB /* temperature.c */; };
+		83CF7DEC2360C7D50037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA52360C4F80037C1FB /* core.c */; };
+		83CF7DED2360C7D50037C1FB /* pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA62360C4F80037C1FB /* pump.c */; };
+		83CF7DEE2360C7D50037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA72360C4F80037C1FB /* fan.c */; };
+		83CF7DF52360C7DE0037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB02360C4F80037C1FB /* temperature.c */; };
+		83CF7DF62360C7DF0037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB12360C4F80037C1FB /* core.c */; };
+		83CF7DF72360C7DF0037C1FB /* power.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB22360C4F80037C1FB /* power.c */; };
+		83CF7DF82360C7DF0037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB32360C4F80037C1FB /* fan.c */; };
+		83CF7DF92360C7E30037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB52360C4F80037C1FB /* temperature.c */; };
+		83CF7DFA2360C7E30037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB62360C4F80037C1FB /* core.c */; };
+		83CF7DFB2360C7E30037C1FB /* power.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB72360C4F80037C1FB /* power.c */; };
+		83CF7DFC2360C7E30037C1FB /* time.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB82360C4F80037C1FB /* time.c */; };
+		83CF7DFE2360C8190037C1FB /* led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBB2360C4F80037C1FB /* led.c */; };
+		83CF7DFF2360C8190037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBC2360C4F80037C1FB /* temperature.c */; };
+		83CF7E002360C8190037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBD2360C4F80037C1FB /* core.c */; };
+		83CF7E012360C8190037C1FB /* pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBE2360C4F80037C1FB /* pump.c */; };
+		83CF7E022360C8190037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBF2360C4F80037C1FB /* fan.c */; };
+		83CF7E032360CB830037C1FB /* led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA92360C4F80037C1FB /* led.c */; };
+		83CF7E042360CB830037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAA2360C4F80037C1FB /* temperature.c */; };
+		83CF7E052360CB830037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAB2360C4F80037C1FB /* core.c */; };
+		83CF7E062360CB830037C1FB /* pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAC2360C4F80037C1FB /* pump.c */; };
+		83CF7E072360CB830037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAD2360C4F80037C1FB /* fan.c */; };
+		83CF7E3A2360CD690037C1FB /* CorsairApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CF7E392360CD690037C1FB /* CorsairApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83CF7E3C2360CD690037C1FB /* CorsairApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7E3B2360CD690037C1FB /* CorsairApi.m */; };
+		83CF7E432360CD950037C1FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D822360C49C0037C1FB /* main.c */; };
+		83CF7E442360CD950037C1FB /* device.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCC2360C4FE0037C1FB /* device.c */; };
+		83CF7E452360CD950037C1FB /* driver.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCD2360C4FE0037C1FB /* driver.c */; };
+		83CF7E462360CD950037C1FB /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DD02360C5060037C1FB /* print.c */; };
+		83CF7E472360CD9D0037C1FB /* options_led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC12360C4F80037C1FB /* options_led.c */; };
+		83CF7E482360CD9D0037C1FB /* scan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC82360C4F80037C1FB /* scan.c */; };
+		83CF7E492360CD9D0037C1FB /* options_pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC92360C4F80037C1FB /* options_pump.c */; };
+		83CF7E4A2360CD9D0037C1FB /* options_fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCA2360C4F80037C1FB /* options_fan.c */; };
+		83CF7E4B2360CD9D0037C1FB /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DCB2360C4F80037C1FB /* options.c */; };
+		83CF7E4C2360CDA10037C1FB /* hydro_asetekpro.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC32360C4F80037C1FB /* hydro_asetekpro.c */; };
+		83CF7E4D2360CDA10037C1FB /* commanderpro.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC42360C4F80037C1FB /* commanderpro.c */; };
+		83CF7E4E2360CDA10037C1FB /* hydro_asetek.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC52360C4F80037C1FB /* hydro_asetek.c */; };
+		83CF7E4F2360CDA10037C1FB /* psu.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC62360C4F80037C1FB /* psu.c */; };
+		83CF7E502360CDA10037C1FB /* hydro_coolit.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DC72360C4F80037C1FB /* hydro_coolit.c */; };
+		83CF7E512360CDA50037C1FB /* rmi.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D9D2360C4F80037C1FB /* rmi.c */; };
+		83CF7E522360CDA50037C1FB /* commanderpro.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D9E2360C4F80037C1FB /* commanderpro.c */; };
+		83CF7E532360CDA50037C1FB /* coolit.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7D9F2360C4F80037C1FB /* coolit.c */; };
+		83CF7E542360CDA50037C1FB /* asetek.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA02360C4F80037C1FB /* asetek.c */; };
+		83CF7E552360CDAA0037C1FB /* led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA32360C4F80037C1FB /* led.c */; };
+		83CF7E562360CDAA0037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA42360C4F80037C1FB /* temperature.c */; };
+		83CF7E572360CDAA0037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA52360C4F80037C1FB /* core.c */; };
+		83CF7E582360CDAA0037C1FB /* pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA62360C4F80037C1FB /* pump.c */; };
+		83CF7E592360CDAA0037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA72360C4F80037C1FB /* fan.c */; };
+		83CF7E5A2360CDB00037C1FB /* led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DA92360C4F80037C1FB /* led.c */; };
+		83CF7E5B2360CDB00037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAA2360C4F80037C1FB /* temperature.c */; };
+		83CF7E5C2360CDB00037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAB2360C4F80037C1FB /* core.c */; };
+		83CF7E5D2360CDB00037C1FB /* pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAC2360C4F80037C1FB /* pump.c */; };
+		83CF7E5E2360CDB00037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DAD2360C4F80037C1FB /* fan.c */; };
+		83CF7E5F2360CDBB0037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB02360C4F80037C1FB /* temperature.c */; };
+		83CF7E602360CDBB0037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB12360C4F80037C1FB /* core.c */; };
+		83CF7E612360CDBB0037C1FB /* power.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB22360C4F80037C1FB /* power.c */; };
+		83CF7E622360CDBB0037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB32360C4F80037C1FB /* fan.c */; };
+		83CF7E632360CDC50037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB52360C4F80037C1FB /* temperature.c */; };
+		83CF7E642360CDC50037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB62360C4F80037C1FB /* core.c */; };
+		83CF7E652360CDC50037C1FB /* power.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB72360C4F80037C1FB /* power.c */; };
+		83CF7E662360CDC50037C1FB /* time.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DB82360C4F80037C1FB /* time.c */; };
+		83CF7E672360CDCA0037C1FB /* led.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBB2360C4F80037C1FB /* led.c */; };
+		83CF7E682360CDCA0037C1FB /* temperature.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBC2360C4F80037C1FB /* temperature.c */; };
+		83CF7E692360CDCA0037C1FB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBD2360C4F80037C1FB /* core.c */; };
+		83CF7E6A2360CDCA0037C1FB /* pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBE2360C4F80037C1FB /* pump.c */; };
+		83CF7E6B2360CDCA0037C1FB /* fan.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CF7DBF2360C4F80037C1FB /* fan.c */; };
+		83CF7E6C2360CE480037C1FB /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CF7DD32360C5D50037C1FB /* libusb-1.0.0.dylib */; };
+		83CF7E6D2360CE480037C1FB /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83CF7DD32360C5D50037C1FB /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83CF7D7D2360C49C0037C1FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		83CF7DD62360C5D50037C1FB /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83CF7DD52360C5D50037C1FB /* libusb-1.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF7E6E2360CE480037C1FB /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83CF7E6D2360CE480037C1FB /* libusb-1.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		832D2A4D23633BDF008CA8D4 /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		83CF7D7F2360C49C0037C1FB /* Corsair */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Corsair; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7D822360C49C0037C1FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		83CF7D8A2360C4EA0037C1FB /* device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = device.h; sourceTree = "<group>"; };
+		83CF7D8C2360C4EA0037C1FB /* options.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		83CF7D8D2360C4EA0037C1FB /* scan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scan.h; sourceTree = "<group>"; };
+		83CF7D8E2360C4EA0037C1FB /* driver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = driver.h; sourceTree = "<group>"; };
+		83CF7D902360C4EA0037C1FB /* asetek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asetek.h; sourceTree = "<group>"; };
+		83CF7D912360C4EA0037C1FB /* coolit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coolit.h; sourceTree = "<group>"; };
+		83CF7D922360C4EA0037C1FB /* asetekpro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asetekpro.h; sourceTree = "<group>"; };
+		83CF7D932360C4EA0037C1FB /* rmi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rmi.h; sourceTree = "<group>"; };
+		83CF7D942360C4EA0037C1FB /* commanderpro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commanderpro.h; sourceTree = "<group>"; };
+		83CF7D952360C4EA0037C1FB /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		83CF7D962360C4EA0037C1FB /* print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
+		83CF7D982360C4EA0037C1FB /* asetek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asetek.h; sourceTree = "<group>"; };
+		83CF7D992360C4EA0037C1FB /* coolit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coolit.h; sourceTree = "<group>"; };
+		83CF7D9A2360C4EA0037C1FB /* rmi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rmi.h; sourceTree = "<group>"; };
+		83CF7D9B2360C4EA0037C1FB /* commanderpro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commanderpro.h; sourceTree = "<group>"; };
+		83CF7D9D2360C4F80037C1FB /* rmi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rmi.c; sourceTree = "<group>"; };
+		83CF7D9E2360C4F80037C1FB /* commanderpro.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = commanderpro.c; sourceTree = "<group>"; };
+		83CF7D9F2360C4F80037C1FB /* coolit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = coolit.c; sourceTree = "<group>"; };
+		83CF7DA02360C4F80037C1FB /* asetek.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asetek.c; sourceTree = "<group>"; };
+		83CF7DA32360C4F80037C1FB /* led.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = led.c; sourceTree = "<group>"; };
+		83CF7DA42360C4F80037C1FB /* temperature.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = temperature.c; sourceTree = "<group>"; };
+		83CF7DA52360C4F80037C1FB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		83CF7DA62360C4F80037C1FB /* pump.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pump.c; sourceTree = "<group>"; };
+		83CF7DA72360C4F80037C1FB /* fan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fan.c; sourceTree = "<group>"; };
+		83CF7DA92360C4F80037C1FB /* led.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = led.c; sourceTree = "<group>"; };
+		83CF7DAA2360C4F80037C1FB /* temperature.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = temperature.c; sourceTree = "<group>"; };
+		83CF7DAB2360C4F80037C1FB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		83CF7DAC2360C4F80037C1FB /* pump.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pump.c; sourceTree = "<group>"; };
+		83CF7DAD2360C4F80037C1FB /* fan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fan.c; sourceTree = "<group>"; };
+		83CF7DAF2360C4F80037C1FB /* led.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = led.c; sourceTree = "<group>"; };
+		83CF7DB02360C4F80037C1FB /* temperature.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = temperature.c; sourceTree = "<group>"; };
+		83CF7DB12360C4F80037C1FB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		83CF7DB22360C4F80037C1FB /* power.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = power.c; sourceTree = "<group>"; };
+		83CF7DB32360C4F80037C1FB /* fan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fan.c; sourceTree = "<group>"; };
+		83CF7DB52360C4F80037C1FB /* temperature.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = temperature.c; sourceTree = "<group>"; };
+		83CF7DB62360C4F80037C1FB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		83CF7DB72360C4F80037C1FB /* power.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = power.c; sourceTree = "<group>"; };
+		83CF7DB82360C4F80037C1FB /* time.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = time.c; sourceTree = "<group>"; };
+		83CF7DB92360C4F80037C1FB /* fan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fan.c; sourceTree = "<group>"; };
+		83CF7DBB2360C4F80037C1FB /* led.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = led.c; sourceTree = "<group>"; };
+		83CF7DBC2360C4F80037C1FB /* temperature.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = temperature.c; sourceTree = "<group>"; };
+		83CF7DBD2360C4F80037C1FB /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		83CF7DBE2360C4F80037C1FB /* pump.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pump.c; sourceTree = "<group>"; };
+		83CF7DBF2360C4F80037C1FB /* fan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fan.c; sourceTree = "<group>"; };
+		83CF7DC12360C4F80037C1FB /* options_led.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = options_led.c; sourceTree = "<group>"; };
+		83CF7DC32360C4F80037C1FB /* hydro_asetekpro.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hydro_asetekpro.c; sourceTree = "<group>"; };
+		83CF7DC42360C4F80037C1FB /* commanderpro.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = commanderpro.c; sourceTree = "<group>"; };
+		83CF7DC52360C4F80037C1FB /* hydro_asetek.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hydro_asetek.c; sourceTree = "<group>"; };
+		83CF7DC62360C4F80037C1FB /* psu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = psu.c; sourceTree = "<group>"; };
+		83CF7DC72360C4F80037C1FB /* hydro_coolit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hydro_coolit.c; sourceTree = "<group>"; };
+		83CF7DC82360C4F80037C1FB /* scan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scan.c; sourceTree = "<group>"; };
+		83CF7DC92360C4F80037C1FB /* options_pump.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = options_pump.c; sourceTree = "<group>"; };
+		83CF7DCA2360C4F80037C1FB /* options_fan.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = options_fan.c; sourceTree = "<group>"; };
+		83CF7DCB2360C4F80037C1FB /* options.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = options.c; sourceTree = "<group>"; };
+		83CF7DCC2360C4FE0037C1FB /* device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = device.c; sourceTree = "<group>"; };
+		83CF7DCD2360C4FE0037C1FB /* driver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = driver.c; sourceTree = "<group>"; };
+		83CF7DD02360C5060037C1FB /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
+		83CF7DD32360C5D50037C1FB /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7E082360CC850037C1FB /* Corsair.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Corsair.entitlements; sourceTree = "<group>"; };
+		83CF7E372360CD690037C1FB /* libCorsairApi.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCorsairApi.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CF7E392360CD690037C1FB /* CorsairApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorsairApi.h; sourceTree = "<group>"; };
+		83CF7E3B2360CD690037C1FB /* CorsairApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorsairApi.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83CF7D7C2360C49C0037C1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7DD42360C5D50037C1FB /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF7E352360CD690037C1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7E6C2360CE480037C1FB /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83CF7D762360C49C0037C1FB = {
+			isa = PBXGroup;
+			children = (
+				83CF7D812360C49C0037C1FB /* Corsair */,
+				83CF7E382360CD690037C1FB /* CorsairApi */,
+				83CF7D802360C49C0037C1FB /* Products */,
+				83CF7DD22360C5D50037C1FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83CF7D802360C49C0037C1FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7D7F2360C49C0037C1FB /* Corsair */,
+				83CF7E372360CD690037C1FB /* libCorsairApi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CF7D812360C49C0037C1FB /* Corsair */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7E082360CC850037C1FB /* Corsair.entitlements */,
+				83CF7DC02360C4F80037C1FB /* logic */,
+				83CF7D9C2360C4F80037C1FB /* lowlevel */,
+				83CF7DA12360C4F80037C1FB /* protocol */,
+				83CF7D892360C4EA0037C1FB /* include */,
+				83CF7D822360C49C0037C1FB /* main.c */,
+				83CF7DCC2360C4FE0037C1FB /* device.c */,
+				83CF7DCD2360C4FE0037C1FB /* driver.c */,
+				83CF7DD02360C5060037C1FB /* print.c */,
+			);
+			path = Corsair;
+			sourceTree = "<group>";
+		};
+		83CF7D892360C4EA0037C1FB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7D8A2360C4EA0037C1FB /* device.h */,
+				83CF7D8B2360C4EA0037C1FB /* logic */,
+				83CF7D8E2360C4EA0037C1FB /* driver.h */,
+				83CF7D8F2360C4EA0037C1FB /* protocol */,
+				83CF7D952360C4EA0037C1FB /* common.h */,
+				83CF7D962360C4EA0037C1FB /* print.h */,
+				83CF7D972360C4EA0037C1FB /* lowlevel */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		83CF7D8B2360C4EA0037C1FB /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7D8C2360C4EA0037C1FB /* options.h */,
+				83CF7D8D2360C4EA0037C1FB /* scan.h */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		83CF7D8F2360C4EA0037C1FB /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7D902360C4EA0037C1FB /* asetek.h */,
+				83CF7D912360C4EA0037C1FB /* coolit.h */,
+				83CF7D922360C4EA0037C1FB /* asetekpro.h */,
+				83CF7D932360C4EA0037C1FB /* rmi.h */,
+				83CF7D942360C4EA0037C1FB /* commanderpro.h */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		83CF7D972360C4EA0037C1FB /* lowlevel */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7D982360C4EA0037C1FB /* asetek.h */,
+				83CF7D992360C4EA0037C1FB /* coolit.h */,
+				83CF7D9A2360C4EA0037C1FB /* rmi.h */,
+				83CF7D9B2360C4EA0037C1FB /* commanderpro.h */,
+			);
+			path = lowlevel;
+			sourceTree = "<group>";
+		};
+		83CF7D9C2360C4F80037C1FB /* lowlevel */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7D9D2360C4F80037C1FB /* rmi.c */,
+				83CF7D9E2360C4F80037C1FB /* commanderpro.c */,
+				83CF7D9F2360C4F80037C1FB /* coolit.c */,
+				83CF7DA02360C4F80037C1FB /* asetek.c */,
+			);
+			path = lowlevel;
+			sourceTree = "<group>";
+		};
+		83CF7DA12360C4F80037C1FB /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DA22360C4F80037C1FB /* coolit */,
+				83CF7DA82360C4F80037C1FB /* asetek */,
+				83CF7DAE2360C4F80037C1FB /* commanderpro */,
+				83CF7DB42360C4F80037C1FB /* rmi */,
+				83CF7DBA2360C4F80037C1FB /* asetekpro */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		83CF7DA22360C4F80037C1FB /* coolit */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DA32360C4F80037C1FB /* led.c */,
+				83CF7DA42360C4F80037C1FB /* temperature.c */,
+				83CF7DA52360C4F80037C1FB /* core.c */,
+				83CF7DA62360C4F80037C1FB /* pump.c */,
+				83CF7DA72360C4F80037C1FB /* fan.c */,
+			);
+			path = coolit;
+			sourceTree = "<group>";
+		};
+		83CF7DA82360C4F80037C1FB /* asetek */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DA92360C4F80037C1FB /* led.c */,
+				83CF7DAA2360C4F80037C1FB /* temperature.c */,
+				83CF7DAB2360C4F80037C1FB /* core.c */,
+				83CF7DAC2360C4F80037C1FB /* pump.c */,
+				83CF7DAD2360C4F80037C1FB /* fan.c */,
+			);
+			path = asetek;
+			sourceTree = "<group>";
+		};
+		83CF7DAE2360C4F80037C1FB /* commanderpro */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DAF2360C4F80037C1FB /* led.c */,
+				83CF7DB02360C4F80037C1FB /* temperature.c */,
+				83CF7DB12360C4F80037C1FB /* core.c */,
+				83CF7DB22360C4F80037C1FB /* power.c */,
+				83CF7DB32360C4F80037C1FB /* fan.c */,
+			);
+			path = commanderpro;
+			sourceTree = "<group>";
+		};
+		83CF7DB42360C4F80037C1FB /* rmi */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DB52360C4F80037C1FB /* temperature.c */,
+				83CF7DB62360C4F80037C1FB /* core.c */,
+				83CF7DB72360C4F80037C1FB /* power.c */,
+				83CF7DB82360C4F80037C1FB /* time.c */,
+				83CF7DB92360C4F80037C1FB /* fan.c */,
+			);
+			path = rmi;
+			sourceTree = "<group>";
+		};
+		83CF7DBA2360C4F80037C1FB /* asetekpro */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DBB2360C4F80037C1FB /* led.c */,
+				83CF7DBC2360C4F80037C1FB /* temperature.c */,
+				83CF7DBD2360C4F80037C1FB /* core.c */,
+				83CF7DBE2360C4F80037C1FB /* pump.c */,
+				83CF7DBF2360C4F80037C1FB /* fan.c */,
+			);
+			path = asetekpro;
+			sourceTree = "<group>";
+		};
+		83CF7DC02360C4F80037C1FB /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DC12360C4F80037C1FB /* options_led.c */,
+				83CF7DC22360C4F80037C1FB /* settings */,
+				83CF7DC82360C4F80037C1FB /* scan.c */,
+				83CF7DC92360C4F80037C1FB /* options_pump.c */,
+				83CF7DCA2360C4F80037C1FB /* options_fan.c */,
+				83CF7DCB2360C4F80037C1FB /* options.c */,
+			);
+			path = logic;
+			sourceTree = "<group>";
+		};
+		83CF7DC22360C4F80037C1FB /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DC32360C4F80037C1FB /* hydro_asetekpro.c */,
+				83CF7DC42360C4F80037C1FB /* commanderpro.c */,
+				83CF7DC52360C4F80037C1FB /* hydro_asetek.c */,
+				83CF7DC62360C4F80037C1FB /* psu.c */,
+				83CF7DC72360C4F80037C1FB /* hydro_coolit.c */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		83CF7DD22360C5D50037C1FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7DD32360C5D50037C1FB /* libusb-1.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83CF7E382360CD690037C1FB /* CorsairApi */ = {
+			isa = PBXGroup;
+			children = (
+				83CF7E392360CD690037C1FB /* CorsairApi.h */,
+				83CF7E3B2360CD690037C1FB /* CorsairApi.m */,
+				832D2A4D23633BDF008CA8D4 /* Helper.h */,
+			);
+			path = CorsairApi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83CF7E332360CD690037C1FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7E3A2360CD690037C1FB /* CorsairApi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83CF7D7E2360C49C0037C1FB /* Corsair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CF7D862360C49C0037C1FB /* Build configuration list for PBXNativeTarget "Corsair" */;
+			buildPhases = (
+				83CF7D7B2360C49C0037C1FB /* Sources */,
+				83CF7D7C2360C49C0037C1FB /* Frameworks */,
+				83CF7D7D2360C49C0037C1FB /* CopyFiles */,
+				83CF7DD62360C5D50037C1FB /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Corsair;
+			productName = Corsair;
+			productReference = 83CF7D7F2360C49C0037C1FB /* Corsair */;
+			productType = "com.apple.product-type.tool";
+		};
+		83CF7E362360CD690037C1FB /* CorsairApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CF7E3D2360CD690037C1FB /* Build configuration list for PBXNativeTarget "CorsairApi" */;
+			buildPhases = (
+				83CF7E332360CD690037C1FB /* Headers */,
+				83CF7E342360CD690037C1FB /* Sources */,
+				83CF7E352360CD690037C1FB /* Frameworks */,
+				83CF7E6E2360CE480037C1FB /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CorsairApi;
+			productName = CorsairApi;
+			productReference = 83CF7E372360CD690037C1FB /* libCorsairApi.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CF7D772360C49C0037C1FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Chris Engelhardt";
+				TargetAttributes = {
+					83CF7D7E2360C49C0037C1FB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					83CF7E362360CD690037C1FB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 83CF7D7A2360C49C0037C1FB /* Build configuration list for PBXProject "Corsair" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CF7D762360C49C0037C1FB;
+			productRefGroup = 83CF7D802360C49C0037C1FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83CF7D7E2360C49C0037C1FB /* Corsair */,
+				83CF7E362360CD690037C1FB /* CorsairApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83CF7D7B2360C49C0037C1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7DF92360C7E30037C1FB /* temperature.c in Sources */,
+				83CF7DF82360C7DF0037C1FB /* fan.c in Sources */,
+				83CF7DDC2360C7C20037C1FB /* options_led.c in Sources */,
+				83CF7DF52360C7DE0037C1FB /* temperature.c in Sources */,
+				83CF7DE82360C7CC0037C1FB /* coolit.c in Sources */,
+				83CF7DE92360C7CC0037C1FB /* asetek.c in Sources */,
+				83CF7DF72360C7DF0037C1FB /* power.c in Sources */,
+				83CF7DFB2360C7E30037C1FB /* power.c in Sources */,
+				83CF7DE32360C7C80037C1FB /* hydro_asetek.c in Sources */,
+				83CF7DFA2360C7E30037C1FB /* core.c in Sources */,
+				83CF7E032360CB830037C1FB /* led.c in Sources */,
+				83CF7DFF2360C8190037C1FB /* temperature.c in Sources */,
+				83CF7DEE2360C7D50037C1FB /* fan.c in Sources */,
+				83CF7E002360C8190037C1FB /* core.c in Sources */,
+				83CF7D832360C49C0037C1FB /* main.c in Sources */,
+				83CF7DFE2360C8190037C1FB /* led.c in Sources */,
+				83CF7DD12360C5060037C1FB /* print.c in Sources */,
+				83CF7DE52360C7C80037C1FB /* hydro_coolit.c in Sources */,
+				83CF7E022360C8190037C1FB /* fan.c in Sources */,
+				83CF7DCF2360C4FE0037C1FB /* driver.c in Sources */,
+				83CF7DE72360C7CC0037C1FB /* commanderpro.c in Sources */,
+				83CF7DED2360C7D50037C1FB /* pump.c in Sources */,
+				83CF7DE62360C7CC0037C1FB /* rmi.c in Sources */,
+				83CF7DD82360C7C00037C1FB /* scan.c in Sources */,
+				83CF7DE42360C7C80037C1FB /* psu.c in Sources */,
+				83CF7E062360CB830037C1FB /* pump.c in Sources */,
+				83CF7DEB2360C7D50037C1FB /* temperature.c in Sources */,
+				83CF7E052360CB830037C1FB /* core.c in Sources */,
+				83CF7DE22360C7C80037C1FB /* commanderpro.c in Sources */,
+				83CF7DD92360C7C00037C1FB /* options_pump.c in Sources */,
+				83CF7DF62360C7DF0037C1FB /* core.c in Sources */,
+				83CF7DDA2360C7C00037C1FB /* options_fan.c in Sources */,
+				83CF7DE12360C7C80037C1FB /* hydro_asetekpro.c in Sources */,
+				83CF7E072360CB830037C1FB /* fan.c in Sources */,
+				83CF7E012360C8190037C1FB /* pump.c in Sources */,
+				83CF7E042360CB830037C1FB /* temperature.c in Sources */,
+				83CF7DFC2360C7E30037C1FB /* time.c in Sources */,
+				83CF7DEC2360C7D50037C1FB /* core.c in Sources */,
+				83CF7DEA2360C7D50037C1FB /* led.c in Sources */,
+				83CF7DDB2360C7C00037C1FB /* options.c in Sources */,
+				83CF7DCE2360C4FE0037C1FB /* device.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CF7E342360CD690037C1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF7E692360CDCA0037C1FB /* core.c in Sources */,
+				83CF7E632360CDC50037C1FB /* temperature.c in Sources */,
+				83CF7E622360CDBB0037C1FB /* fan.c in Sources */,
+				83CF7E682360CDCA0037C1FB /* temperature.c in Sources */,
+				83CF7E472360CD9D0037C1FB /* options_led.c in Sources */,
+				83CF7E5A2360CDB00037C1FB /* led.c in Sources */,
+				83CF7E5F2360CDBB0037C1FB /* temperature.c in Sources */,
+				83CF7E5B2360CDB00037C1FB /* temperature.c in Sources */,
+				83CF7E442360CD950037C1FB /* device.c in Sources */,
+				83CF7E612360CDBB0037C1FB /* power.c in Sources */,
+				83CF7E522360CDA50037C1FB /* commanderpro.c in Sources */,
+				83CF7E652360CDC50037C1FB /* power.c in Sources */,
+				83CF7E592360CDAA0037C1FB /* fan.c in Sources */,
+				83CF7E642360CDC50037C1FB /* core.c in Sources */,
+				83CF7E452360CD950037C1FB /* driver.c in Sources */,
+				83CF7E4A2360CD9D0037C1FB /* options_fan.c in Sources */,
+				83CF7E4E2360CDA10037C1FB /* hydro_asetek.c in Sources */,
+				83CF7E572360CDAA0037C1FB /* core.c in Sources */,
+				83CF7E5E2360CDB00037C1FB /* fan.c in Sources */,
+				83CF7E482360CD9D0037C1FB /* scan.c in Sources */,
+				83CF7E492360CD9D0037C1FB /* options_pump.c in Sources */,
+				83CF7E6B2360CDCA0037C1FB /* fan.c in Sources */,
+				83CF7E582360CDAA0037C1FB /* pump.c in Sources */,
+				83CF7E4D2360CDA10037C1FB /* commanderpro.c in Sources */,
+				83CF7E532360CDA50037C1FB /* coolit.c in Sources */,
+				83CF7E4B2360CD9D0037C1FB /* options.c in Sources */,
+				83CF7E552360CDAA0037C1FB /* led.c in Sources */,
+				83CF7E502360CDA10037C1FB /* hydro_coolit.c in Sources */,
+				83CF7E432360CD950037C1FB /* main.c in Sources */,
+				83CF7E4F2360CDA10037C1FB /* psu.c in Sources */,
+				83CF7E4C2360CDA10037C1FB /* hydro_asetekpro.c in Sources */,
+				83CF7E602360CDBB0037C1FB /* core.c in Sources */,
+				83CF7E6A2360CDCA0037C1FB /* pump.c in Sources */,
+				83CF7E5D2360CDB00037C1FB /* pump.c in Sources */,
+				83CF7E3C2360CD690037C1FB /* CorsairApi.m in Sources */,
+				83CF7E512360CDA50037C1FB /* rmi.c in Sources */,
+				83CF7E662360CDC50037C1FB /* time.c in Sources */,
+				83CF7E5C2360CDB00037C1FB /* core.c in Sources */,
+				83CF7E542360CDA50037C1FB /* asetek.c in Sources */,
+				83CF7E672360CDCA0037C1FB /* led.c in Sources */,
+				832D2A4E23633BDF008CA8D4 /* Helper.h in Sources */,
+				83CF7E462360CD950037C1FB /* print.c in Sources */,
+				83CF7E562360CDAA0037C1FB /* temperature.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		83CF7D842360C49C0037C1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83CF7D852360C49C0037C1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83CF7D872360C49C0037C1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_ENTITLEMENTS = Corsair/Corsair.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6X7ND428MT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$PROJECT_DIR/libusb-1.0.23/libusb",
+					$PROJECT_DIR/Corsair/include,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peakerest.corsair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		83CF7D882360C49C0037C1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_ENTITLEMENTS = Corsair/Corsair.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6X7ND428MT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$PROJECT_DIR/libusb-1.0.23/libusb",
+					$PROJECT_DIR/Corsair/include,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.peakerest.corsair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		83CF7E3E2360CD690037C1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6X7ND428MT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$PROJECT_DIR/Corsair/include/**",
+					"$PROJECT_DIR/libusb-1.0.23/libusb",
+				);
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		83CF7E3F2360CD690037C1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6X7ND428MT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$PROJECT_DIR/Corsair/include/**",
+					"$PROJECT_DIR/libusb-1.0.23/libusb",
+				);
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83CF7D7A2360C49C0037C1FB /* Build configuration list for PBXProject "Corsair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF7D842360C49C0037C1FB /* Debug */,
+				83CF7D852360C49C0037C1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CF7D862360C49C0037C1FB /* Build configuration list for PBXNativeTarget "Corsair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF7D872360C49C0037C1FB /* Debug */,
+				83CF7D882360C49C0037C1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CF7E3D2360CD690037C1FB /* Build configuration list for PBXNativeTarget "CorsairApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CF7E3E2360CD690037C1FB /* Debug */,
+				83CF7E3F2360CD690037C1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CF7D772360C49C0037C1FB /* Project object */;
+}

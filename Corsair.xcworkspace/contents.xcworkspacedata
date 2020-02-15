@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:libusb-1.0.23/Xcode/libusb.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Corsair.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libusb-1.0.23/Xcode/../../CorsairControl/CorsairControl.xcodeproj">
+   </FileRef>
+</Workspace>

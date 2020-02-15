@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.014874">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: scp" time="0.400659">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: ../Sparkle/bin/generate_appcast ../release" time="0.612202">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: scp" time="0.468729">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -1,0 +1,68 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:mac)
+
+platform :mac do
+  desc "Build the project and prepares for submissions"
+  lane :releaseBuild do
+    type = prompt(text: "Please enter release Type: major, minor, patch ")
+    increment_version_number(xcodeproj: "./CorsairControl/CorsairControl.xcodeproj", bump_type: type)
+    increment_build_number(xcodeproj: "./CorsairControl/CorsairControl.xcodeproj")
+    version = get_version_number(xcodeproj: "./CorsairControl/CorsairControl.xcodeproj")
+    build = get_build_number(xcodeproj: "./CorsairControl/CorsairControl.xcodeproj")
+    
+    gym(scheme: "CorsairControl", output_directory: "./tmp/")
+    zip(
+      path: "./tmp/Corsair\ Control.app",
+      output_path: "./release/CorsairControl_V" + version + "_Build" + build + ".app.zip"
+    )
+  end
+  
+  desc "Build the project"
+  lane :build do
+    version = get_version_number(xcodeproj: "./CorsairControl/CorsairControl.xcodeproj")
+    build = get_build_number(xcodeproj: "./CorsairControl/CorsairControl.xcodeproj")
+    
+    gym(scheme: "CorsairControl", output_directory: "./tmp/")
+    zip(
+      path: "./tmp/Corsair\ Control.app",
+      output_path: "./release/CorsairControl_V" + version + "_Build" + build + ".app.zip"
+    )
+  end
+  
+  
+  desc "Releases the app with sparkle"
+  lane :release do
+    scp(
+        host: "192.168.0.2",
+        username: "root",
+        download: {
+          src: "/opt/docker/sparkle/builds/corsaircontrol/release/",
+          dst: "."
+        }
+      )
+      sh("../Sparkle/bin/generate_appcast", "../release")
+
+    scp(
+        host: "192.168.0.2",
+        username: "root",
+        upload: {
+          src: "release",
+          dst: "/opt/docker/sparkle/builds/corsaircontrol/"
+        }
+      )
+  end
+end
